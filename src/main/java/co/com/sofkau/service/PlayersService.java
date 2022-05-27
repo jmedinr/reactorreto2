@@ -2,12 +2,15 @@ package co.com.sofkau.service;
 
 import co.com.sofkau.domain.Players;
 import co.com.sofkau.repository.PlayersRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Service
 public class PlayersService {
+
+    @Autowired
     private final PlayersRepository playersRepository;
 
 

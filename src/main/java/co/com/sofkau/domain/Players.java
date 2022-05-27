@@ -4,10 +4,12 @@ package co.com.sofkau.domain;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+
 @Document(collection = "players")
 public class Players {
     @Id
     private String id;
+
     private String name;
     private Integer age;
     private String icon;
@@ -15,6 +17,16 @@ public class Players {
     private Integer winners;
     private Integer games;
     private String club;
+
+    public Players(String name, Integer age, String icon, String national, Integer winners, Integer games, String club) {
+        this.name = name;
+        this.age = age;
+        this.icon = icon;
+        this.national = national;
+        this.winners = winners;
+        this.games = games;
+        this.club = club;
+    }
 
     public String getId() {
         return id;
