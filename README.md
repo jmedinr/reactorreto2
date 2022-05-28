@@ -2,6 +2,8 @@
 
 #Realizado por Juan Diego Medina Rojas y Maria Del Pilar Coral
 
+# BD: Mongo DB Atlas
+
 # Video Explicativo
 https://www.youtube.com/watch?v=EE3e4H-5QsI
 
