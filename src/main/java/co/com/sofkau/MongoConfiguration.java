@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.config.AbstractReactiveMongoConfiguratio
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 
 @Configuration
-@EnableReactiveMongoRepositories("co.com.sofkau.repository")
+@EnableReactiveMongoRepositories
 public class MongoConfiguration extends AbstractReactiveMongoConfiguration {
 
     @Value("${spring.data.mongodb.uri}")
@@ -21,6 +21,6 @@ public class MongoConfiguration extends AbstractReactiveMongoConfiguration {
 
     @Override
     protected String getDatabaseName() {
-        return "spring-reactive-mongodb";
+        return "Jugadores";
     }
 }

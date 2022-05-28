@@ -32,8 +32,29 @@ public class Reactorreto2Application implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		addDatos();
 	}
-	 public void addDatos(){
-		listaJugadores.map(player -> playersRepository.save(new Players(player.name, player.age, player.icon, player.national, player.winners, player.games, player.club))).subscribe();
+	 public void addDatos() throws InterruptedException {
+     System.out.println(listaJugadores);
+		listaJugadores.map(player -> {
+      //System.out.println("saving player");
+      //System.out.println(player.name);
+      return playersRepository.save(new Players(player.name, player.age, player.icon, player.national, player.winners, player.games, player.club))
+        .subscribe();
+    })
+      .subscribe();
+
+    playersRepository.findAll()
+      .map(x -> {
+        System.out.println(x.getName());
+        return x;
+      })
+      .subscribe();
+
+     playersRepository.findAll()
+       .map(x -> {
+         System.out.println(x.getName());
+         return x;
+       })
+       .subscribe();
 	 }
 }
 
