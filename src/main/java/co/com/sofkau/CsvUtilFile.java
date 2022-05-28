@@ -5,15 +5,15 @@ import com.opencsv.exceptions.CsvException;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class CsvUtilFile {
-    private CsvUtilFile(){}
+    private CsvUtilFile() {
+    }
 
-    public static List<Player> getPlayers(){
+    public static List<Player> getPlayers() {
         var uri = CsvUtilFile.class.getClassLoader().getResource("data.csv");
         List<Player> list = new ArrayList<>();
         try {

@@ -33,4 +33,8 @@ public class PlayersService {
     public Mono<Void> deleteById(String id) {
         return playersRepository.deleteById(id);
     }
+
+    public void deleteAll() {
+        playersRepository.deleteAll();
+    }
 }

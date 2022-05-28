@@ -7,16 +7,15 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("Jugadores")
 public class Players {
+    private final String name;
+    private final Integer age;
+    private final String icon;
+    private final String national;
+    private final Integer winners;
+    private final Integer games;
+    private final String club;
     @Id
     private String id;
-
-    private String name;
-    private Integer age;
-    private String icon;
-    private String national;
-    private Integer winners;
-    private Integer games;
-    private String club;
 
     public Players(String name, Integer age, String icon, String national, Integer winners, Integer games, String club) {
         this.name = name;

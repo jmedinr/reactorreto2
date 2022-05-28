@@ -34,11 +34,16 @@ public class PlayersResource {
         return new ResponseEntity(players, players != null ? HttpStatus.OK : HttpStatus.NOT_FOUND);
     }
 
-
     @DeleteMapping("/delete/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void delete(@PathVariable("id") Integer id) {
         playersService.deleteById(id.toString());
+    }
+
+    @DeleteMapping("/delete/all")
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteAll() {
+        playersService.deleteAll();
     }
 
 }
