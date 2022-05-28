@@ -1,5 +1,10 @@
 # Challenge reactor-core
 
+#Realizado por Juan Diego Medina Rojas y Maria Del Pilar Coral
+
+# Video Explicativo
+https://www.youtube.com/watch?v=EE3e4H-5QsI
+
 Dentro del código se encutra un ejemplo para aplicar reactividad con Spring Boot, se cuenta con una herramienta utilitaria para leer archivos CSV, lo que se buscar es aplicar los operadores reactivas para leer este archivo, y se reta para hacer este procedimiento en mongodb.
 
 Leer las pruebas unitarias.
