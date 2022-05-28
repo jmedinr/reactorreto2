@@ -1,6 +1,6 @@
 # Challenge reactor-core
 
-#Realizado por Juan Diego Medina Rojas y Maria Del Pilar Coral
+#Realizado por Juan Diego Medina Rojas y Maricela Del Pilar Coral
 
 # BD: Mongo DB Atlas
 
